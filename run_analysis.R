@@ -46,5 +46,5 @@ combined_df <- cbind(X_df, subject_df, y_df)
 
 # created tidy (long) data and save to file
 melted_df <- melt(combined_df, (id.vars=c("SubjectId", "Activity")))
-dcast(melted_df, SubjectId + Activity ~  variable, mean) %>% write.table(file = ".\\tidy_data.txt")
+dcast(melted_df, SubjectId + Activity ~  variable, mean) %>% write.table(file = ".\\tidy_data.txt", row.names=FALSE)
 
