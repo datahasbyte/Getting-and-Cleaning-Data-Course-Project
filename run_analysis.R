@@ -5,8 +5,6 @@
 library(reshape2)
 library(dplyr)
 
-setwd("E:\\Dropbox\\coursera\\Getting and Cleaning Data\\UCI HAR Dataset")
-
 X_train <- read.table(".\\train\\X_train.txt")
 y_train <- read.table(".\\train\\y_train.txt")
 X_test <- read.table(".\\test\\X_test.txt")
@@ -17,7 +15,6 @@ features <- read.table(".\\features.txt")[,2]
 activities <- read.table(".\\activity_labels.txt")[,2] # activity names 
 
 # Linux
-# setwd("~/Dropbox/coursera/Getting and Cleaning Data/UCI HAR Dataset")
 # 
 # X_train <- read.table("./train/X_train.txt")
 # y_train <- read.table("./train/y_train.txt")
