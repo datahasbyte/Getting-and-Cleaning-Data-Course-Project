@@ -5,5 +5,6 @@ The purpose of this project is to demonstrate ability to collect, work with, and
 1. Load test and training data 
 2. properly name columns
 3. merge test, training, and subject data together
-4. create tidy data
-5. export tidy data
+4. keep only observations of mean or standard deviation
+5. create tidy data
+6. export tidy data
